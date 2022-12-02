@@ -25,16 +25,16 @@ function getContent() {
   let jsxReturn = <></>;
   switch (url) {
     case homeUrl:
-      jsxReturn=<HomeContent />;
+      jsxReturn = <HomeContent />;
       break;
     case aboutUrl:
-      jsxReturn=<AboutContent />;
+      jsxReturn = <AboutContent />;
       break;
     case projectsUrl:
-      jsxReturn=<ProjectsContent />;
+      jsxReturn = <ProjectsContent />;
       break;
     default:
-      jsxReturn=<FourOFourContent />;
+      jsxReturn = <FourOFourContent />;
       break;
   }
   return jsxReturn;
