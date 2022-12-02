@@ -20,7 +20,7 @@ class HeaderItem extends Component {
   formatDestination() {
     const page = this.props.page;
     if (page === "index") return "./";
-    return "./#" + page;
+    return "./" + page;
   }
 }
 
