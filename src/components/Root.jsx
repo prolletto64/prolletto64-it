@@ -1,14 +1,10 @@
 import React, { Component } from "react";
 import Header from "./header";
-import HomeContent from "./dynamicDivs/homeContent";
-import AboutContent from "./dynamicDivs/aboutContent";
-import ProjectsContent from "./dynamicDivs/projectsContent";
-import FourOFourContent from "./dynamicDivs/fourOFourContent";
-
-const homeUrl = "index";
-const aboutUrl = "about";
-const projectsUrl = "projects";
-
+import HomeContent from "./contents/homeContent";
+import AboutContent from "./contents/aboutContent";
+import ProjectsContent from "./contents/projectsContent";
+import FourOFourContent from "./contents/fourOFourContent";
+import SocialContent from "./contents/socialContent";
 class Root extends Component {
   state = { page: "index" };
   render() {
@@ -31,14 +27,17 @@ class Root extends Component {
     const page = this.state.page;
     let jsxReturn = <></>;
     switch (page) {
-      case homeUrl:
+      case "index":
         jsxReturn = <HomeContent />;
         break;
-      case aboutUrl:
+      case "about":
         jsxReturn = <AboutContent />;
         break;
-      case projectsUrl:
+      case "projects":
         jsxReturn = <ProjectsContent />;
+        break;
+      case "social":
+        jsxReturn = <SocialContent />;
         break;
       default:
         jsxReturn = <FourOFourContent />;

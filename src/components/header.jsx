@@ -7,6 +7,7 @@ class Header extends Component {
       { id: 0, name: "hompage", pageName: "index" },
       { id: 1, name: "about", pageName: "about" },
       { id: 2, name: "projects", pageName: "projects" },
+      { id: 3, name: "social", pageName: "social" },
     ],
   };
   render() {
