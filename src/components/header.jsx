@@ -18,6 +18,7 @@ class Header extends Component {
             name={el.name}
             page={el.pageName}
             id={el.id}
+            onAction={this.props.onAction}
           />
         ))}
       </div>

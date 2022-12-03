@@ -6,5 +6,4 @@ class HomeContent extends Component {
     return <div className="h-fit min-h-screen bg-zinc-400"></div>;
   }
 }
-
 export default HomeContent;
