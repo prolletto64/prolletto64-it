@@ -1,12 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Root from "./components/Root";
+import Root from "./components/root";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 document.title = "titolo";
+window.location.hash="";
 root.render(
   <Root />
 );

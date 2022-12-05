@@ -5,13 +5,15 @@ import AboutContent from "./contents/aboutContent";
 import ProjectsContent from "./contents/projectsContent";
 import FourOFourContent from "./contents/fourOFourContent";
 import SocialContent from "./contents/socialContent";
+import Footer from "./footer";
 class Root extends Component {
   state = { page: "index" };
   render() {
     return (
-      <div className="inset-0 w-full h-full bg-slate-400">
+      <div className="inset-0 w-full h-full">
         <Header onAction={this.changeUrl} />
         {this.getContent()}
+        <Footer />
       </div>
     );
   }

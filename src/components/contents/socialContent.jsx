@@ -15,7 +15,7 @@ class SocialContent extends Component {
   };
   render() {
     return (
-      <div className="h-fit min-h-screen flex justify-center">
+      <div className="h-fit min-h-screen w-full flex justify-center bg-slate-400">
         <div className="flex flex-col justify-start rounded-md bg-slate-500 mt-10 h-fit text-center px-2">
           {this.state.socials.map((social) => (
             <SocialMedia key={social.id} display={social.name} href={social.url} />

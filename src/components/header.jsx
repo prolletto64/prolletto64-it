@@ -12,7 +12,7 @@ class Header extends Component {
   };
   render() {
     return (
-      <div className="flex flex-row space-x-2 pl-2 pb-1 pt-1 bg-slate-500">
+      <div className="flex flex-row space-x-2 pl-2 pb-1 pt-1 bg-slate-500 h-1/9">
         {this.state.elements.map((el) => (
           <HeaderItem
             key={el.id}
